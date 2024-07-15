@@ -1,10 +1,11 @@
-import Dashboard from "./Components/Dashboard/Dashboard";
+import { RouterProvider } from "react-router-dom";
+import router from "./Components/Routes/Routes";
 
 
 export default function App() {
   return (
-    <h1>
-      <Dashboard/>
-    </h1>
+    <>
+    <RouterProvider router={router} />
+    </>
   )
 }
